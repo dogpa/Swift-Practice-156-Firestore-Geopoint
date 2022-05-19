@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestoreSwift
 
 @main
 struct Swift_Practice_156_Firestore_GeopointApp: App {
+    
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

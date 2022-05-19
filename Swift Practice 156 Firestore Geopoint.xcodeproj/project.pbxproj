@@ -11,6 +11,11 @@
 		2DBA4A512835C44500E8CA56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA4A502835C44500E8CA56 /* ContentView.swift */; };
 		2DBA4A532835C44600E8CA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA4A522835C44600E8CA56 /* Assets.xcassets */; };
 		2DBA4A562835C44600E8CA56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA4A552835C44600E8CA56 /* Preview Assets.xcassets */; };
+		2DBA4A5D2835C4D600E8CA56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA4A5C2835C4D600E8CA56 /* GoogleService-Info.plist */; };
+		2DBA4A612835C6F500E8CA56 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2DBA4A602835C6F500E8CA56 /* FirebaseFirestore */; };
+		2DBA4A632835C6F500E8CA56 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2DBA4A622835C6F500E8CA56 /* FirebaseFirestoreSwift */; };
+		2DBA4A652835CAC800E8CA56 /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA4A642835CAC800E8CA56 /* LocationInfo.swift */; };
+		2DBA4A692836838700E8CA56 /* LocationVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA4A682836838700E8CA56 /* LocationVIewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,9 @@
 		2DBA4A502835C44500E8CA56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2DBA4A522835C44600E8CA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DBA4A552835C44600E8CA56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2DBA4A5C2835C4D600E8CA56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2DBA4A642835CAC800E8CA56 /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
+		2DBA4A682836838700E8CA56 /* LocationVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVIewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBA4A612835C6F500E8CA56 /* FirebaseFirestore in Frameworks */,
+				2DBA4A632835C6F500E8CA56 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				2DBA4A4E2835C44500E8CA56 /* Swift_Practice_156_Firestore_GeopointApp.swift */,
-				2DBA4A502835C44500E8CA56 /* ContentView.swift */,
+				2DBA4A6A2836934400E8CA56 /* View */,
+				2DBA4A672836836E00E8CA56 /* ViewModel */,
+				2DBA4A662836836400E8CA56 /* Model */,
+				2DBA4A5C2835C4D600E8CA56 /* GoogleService-Info.plist */,
 				2DBA4A522835C44600E8CA56 /* Assets.xcassets */,
 				2DBA4A542835C44600E8CA56 /* Preview Content */,
 			);
@@ -65,6 +78,30 @@
 				2DBA4A552835C44600E8CA56 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DBA4A662836836400E8CA56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DBA4A642835CAC800E8CA56 /* LocationInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DBA4A672836836E00E8CA56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2DBA4A682836838700E8CA56 /* LocationVIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2DBA4A6A2836934400E8CA56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DBA4A502835C44500E8CA56 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +120,10 @@
 			dependencies = (
 			);
 			name = "Swift Practice 156 Firestore Geopoint";
+			packageProductDependencies = (
+				2DBA4A602835C6F500E8CA56 /* FirebaseFirestore */,
+				2DBA4A622835C6F500E8CA56 /* FirebaseFirestoreSwift */,
+			);
 			productName = "Swift Practice 156 Firestore Geopoint";
 			productReference = 2DBA4A4B2835C44500E8CA56 /* Swift Practice 156 Firestore Geopoint.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 2DBA4A422835C44500E8CA56;
+			packageReferences = (
+				2DBA4A5F2835C6F500E8CA56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 2DBA4A4C2835C44500E8CA56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +171,7 @@
 			files = (
 				2DBA4A562835C44600E8CA56 /* Preview Assets.xcassets in Resources */,
 				2DBA4A532835C44600E8CA56 /* Assets.xcassets in Resources */,
+				2DBA4A5D2835C4D600E8CA56 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBA4A652835CAC800E8CA56 /* LocationInfo.swift in Sources */,
 				2DBA4A512835C44500E8CA56 /* ContentView.swift in Sources */,
 				2DBA4A4F2835C44500E8CA56 /* Swift_Practice_156_Firestore_GeopointApp.swift in Sources */,
+				2DBA4A692836838700E8CA56 /* LocationVIewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +388,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DBA4A5F2835C6F500E8CA56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DBA4A602835C6F500E8CA56 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DBA4A5F2835C6F500E8CA56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2DBA4A622835C6F500E8CA56 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DBA4A5F2835C6F500E8CA56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DBA4A432835C44500E8CA56 /* Project object */;
 }
